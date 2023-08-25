@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+td{
+    @apply p-2;
+}
+tbody tr{
+    @apply hover:bg-cst-darkgray-700 active:bg-cst-darkgray-800 cursor-pointer;
+}
+thead{
+    @apply font-semibold bg-cst-darkgray-600;
+}
+thead tr td:nth-child(2) {
+    @apply text-right;
+}
+tbody{
+    @apply bg-cst-darkgray-900;
+}
+tbody tr td:nth-child(2) {
+    @apply text-right;
+}
+tbody tr:nth-child(even){
+    @apply bg-cst-darkgray-800;
+}
+table{
+    @apply m-3 text-sm;
+}
+
+.RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+    @apply hidden;
+}
